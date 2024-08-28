@@ -30,11 +30,12 @@ test:
     - lmoments3
   commands:
     - pip check
-    - python -m unittest discover -v
+    # Requires that the `tests` folder be included in source files 
+    # - python -m unittest discover -v
   requires:
     - pip
-  source_files:
-    - lmoments3/tests
+  # source_files:
+    # - lmoments3/tests
 
 about:
   home: https://github.com/Ouranosinc/lmoments3
