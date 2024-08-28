@@ -18,6 +18,7 @@ requirements:
   host:
     - python >=3.8
     - pip
+    - setuptools
     - versioneer
   run:
     - python >=3.8
@@ -29,8 +30,11 @@ test:
     - lmoments3
   commands:
     - pip check
+    - python -m unittest discover -v
   requires:
     - pip
+  source_files:
+    - lmoments3
 
 about:
   home: https://github.com/Ouranosinc/lmoments3
