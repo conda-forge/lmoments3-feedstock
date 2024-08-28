@@ -34,8 +34,7 @@ test:
   requires:
     - pip
   source_files:
-    - lmoments3
-    - tests
+    - lmoments3/tests
 
 about:
   home: https://github.com/Ouranosinc/lmoments3
