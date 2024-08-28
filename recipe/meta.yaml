@@ -1,5 +1,5 @@
 {% set name = "lmoments3" %}
-{% set version = "1.0.6" %}
+{% set version = "1.0.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lmoments3-{{ version }}.tar.gz
-  sha256: 404a589335c16549f5ff519d3fafab247203ef78801296447db939b0c58f824b
+  sha256: cdbba3f183feede8422e85e9a99732bd14d5e19b9f0db87315c24343cb524748
 
 build:
   noarch: python
