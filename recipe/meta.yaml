@@ -19,7 +19,7 @@ requirements:
     - python >=3.8
     - pip
     - setuptools
-    - versioneer
+    - setuptools-scm >=8.0
   run:
     - python >=3.8
     - numpy
