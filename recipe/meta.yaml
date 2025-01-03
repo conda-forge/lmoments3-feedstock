@@ -6,22 +6,22 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lmoments3-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/lmoments3-{{ version }}.tar.gz
   sha256: bb58bfc23c924ebe30852b57a9ac4fe15549bf9376843b7ab67aed79bc06bee1
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - setuptools
     - setuptools-scm >=8.0
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - numpy
     - scipy
 
@@ -36,6 +36,7 @@ test:
     - pip
   # source_files:
     # - lmoments3/tests
+    - python {{ python_min }}
 
 about:
   home: https://github.com/Ouranosinc/lmoments3
